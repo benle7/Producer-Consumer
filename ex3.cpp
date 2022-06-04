@@ -213,7 +213,7 @@ void* editor(void* j) {
         if (item == "DONE") {
             shouldStop = true;
         } else {
-            sleep(0.1);
+            usleep(100000);
             edQueue->enqueue(item);
         }
     }
